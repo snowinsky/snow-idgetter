@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Setter
 @RequiredArgsConstructor
-public class IdGetterFactory implements IdGetterFactoryFacade {
+public class IdGetterFactory implements IdGetterFactoryInterface {
 
     private static final ExecutorService THREAD_POOL = new ThreadPoolExecutor(5, 20,
             0L, TimeUnit.MILLISECONDS,
